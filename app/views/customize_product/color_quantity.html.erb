@@ -1,0 +1,111 @@
+<% provide(:breadcrumb, 'Color & Quantity') %>
+
+<section class="container clearfix customize">
+
+	<%= render 'layouts/breadcrumb' %>
+
+	<div class="customize_nav">
+		<ul>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_black.png", :alt => "Black", :title => "Black" %>
+				<h2><span>Black</span></h2>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_white.png", :alt => "White", :title => "White" %>
+				<h2><span>White</span></h2>
+				<% end %>            	
+			</li>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_natural.png", :alt => "Natural", :title => "Natural" %>
+				<h2><span>Natural</span></h2>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_yellow.png", :alt => "Yellow", :title => "Yellow" %>
+				<h2><span>Yellow</span></h2>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_orange.png", :alt => "Orange", :title => "Orange" %>
+				<h2><span>Orange</span></h2>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_red.png", :alt => "Red", :title => "Red" %>
+				<h2><span>Red</span></h2>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_blue.png", :alt => "Blue", :title => "Blue" %>
+				<h2><span>Blue</span></h2>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to size_path, :class => "" do %>
+				<%= image_tag "pla300_green.png", :alt => "Green", :title => "Green" %>
+				<h2><span>Green</span></h2>
+				<% end %>
+			</li>
+		</ul>
+	</div>
+
+	<div class="customize_info_color_qty">
+		<h2>PLA - 3.00 <span>MM</span></h2>
+		<h2>Black</h2>
+		<p>A must have for your 3D printing arsenal.  Everything looks good in black.  MakerStash carefully selects plastic colorants that work well with our resins.  The result is a color that makes your print pop.</p>
+		<h3 class="attribute_header"><span>Slide to Select Amount</span></h3>
+
+		<div id="slider"></div>
+			
+		<div class="qauntity_conversion">
+			<div class="conversion">
+				<h4>Weight</h4>
+				<div>
+					<h5><div id="slider-value-lb"></h5>
+					<p>lb(s)</p>
+				</div>
+			</div>
+			<div class="conversion">
+				<h4>Length</h4>
+				<div>
+					<h5><div id="slider-value"></div></h5>
+					<p>Feet</p>
+				</div>
+			</div>
+			<div class="conversion">
+				<h4>Will Make</h4>
+				<div>
+					<h5><div id="slider-value-cp"></h5>
+					<p>Chess Pieces</p>
+				</div>
+			</div>
+		</div>
+		<h3 class="attribute_header"><span>How Many?</span></h3>
+		<form>
+			<label class="customize_info_qty">
+				<input type="text" name="quantity"> Lengths of 190 FT
+			</label>
+		</form>
+		<h3 class="attribute_header"><span>Spooling?</span></h3>
+		<form>
+			<label>
+				<input type="checkbox" name="spool"> Add Spool (+ $1.50)
+			</label>
+		</form>
+		<div class="price">
+			<h2>Price</h2>
+			<p>$21.50</p>
+		</div>
+			<a class="red_button" href="#">Add to Cart</a>
+	</div>
+
+</div>
+</section>

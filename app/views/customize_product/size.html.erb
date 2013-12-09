@@ -1,0 +1,46 @@
+<% provide(:breadcrumb, 'Size') %>
+
+<section class="container clearfix customize">
+
+	<%= render 'layouts/breadcrumb' %>
+
+	<div class="customize_nav">
+		<ul>
+            <li>
+            	<%= link_to size_path, :class => "" do %>
+            		<%= image_tag "size_175.png", :alt => "PLA Formula", :title => "PLA" %>
+            		<h2>1.75 <span>MM</span></h2>
+            	<% end %>
+            </li>
+            <li>
+            	<%= link_to size_path, :class => "" do %>
+            		<%= image_tag "size_300.png", :alt => "ABS Formula", :title => "ABS" %>
+            		<h2>3.00 <span>MM</span></h2>
+            	<% end %>
+            </li>
+        </ul>
+	</div>
+
+	<div class="customize_info">
+		<h2>1.75 <span>MM</span> Filament</h2>
+		<a class="red_button" href="#">Select</a>
+		<p>Quality 3D printing filament must be produced to exacting specifications, in order to avoid jams and other calibration problems.  MakerStash filaments are extruded with laser controlled precision.   We test our suppliers exhaustively so that your experience is a good one.</p>
+		<h3 class="attribute_header"><span>Specifications</span></h3>
+			<ul class="attribute">
+				<li>
+		        	<%= image_tag "175_diameter.png", :alt => "1.75 MM Diameter", :title => "1.75 MM Diameter" %>
+		        	<h4>Diameter</h4>
+	        	</li>
+				<li>
+		        	<%= image_tag "175_tolerance.png", :alt => ".05 MM Tolerance", :title => ".05 MM Tolerance" %>
+		        	<h4>Tolerance</h4>
+	        	</li>
+				<li>
+		        	<%= image_tag "175_round.png", :alt => "Consistent Roundness", :title => "Consistent Roundness" %>
+		        	<h4>Consistent Roundness</h4>
+	        	</li>
+	        </ul>
+    </div>
+
+	</div>
+</section>

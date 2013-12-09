@@ -1,0 +1,58 @@
+<footer>
+
+	<div class="container clearfix">
+		<ul>
+			<li><a href="#">Learn</a></li>
+			<li><a href="#">Getting Started</a></li>
+			<li><a href="#">Filament Guide</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Our Story</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Terms &amp; Conditions</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">Blog</a></li>
+		</ul>
+
+		<ul>
+			<li><a href="#">Connect</a></li>
+			<li>
+				<ul>
+					<li>
+						<%= link_to material_path, :class => "clearfix" do %>
+            			<%= image_tag "footer_twitter.png", :alt => "Twitter", :title => "Twitter" %>
+            			<% end %>
+					</li>
+					<li>
+						<%= link_to material_path, :class => "clearfix" do %>
+            			<%= image_tag "footer_facebook.png", :alt => "Facebook", :title => "Facebook" %>
+            			<% end %>						
+					</li>
+					<li>
+						<%= link_to material_path, :class => "clearfix" do %>
+            			<%= image_tag "footer_googleplus.png", :alt => "Google Plus", :title => "Google Plus" %>
+            			<% end %>						
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>Subscribe to our Newsletter:</p>
+			</li>
+			<li>
+				<form>
+					<label class="footer_signup">
+						<input type="text" name="email">
+					</label>
+				</form>
+			</li>
+			<li>
+				<a href="#" class="blue_button">Join</a>
+			</li>
+		</ul>
+	</div>
+</footer>

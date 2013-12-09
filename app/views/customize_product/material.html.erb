@@ -1,0 +1,87 @@
+<% provide(:breadcrumb, 'Material') %>
+
+<section class="container clearfix customize">
+
+	<%= render 'layouts/breadcrumb' %>
+
+	<div class="customize_nav">
+		<ul>
+            <li>
+            	<%= link_to material_path, :class => "" do %>
+            		<%= image_tag "pla_formula.png", :alt => "PLA Formula", :title => "PLA" %>
+            		<h2>PLA</h2>
+            	<% end %>
+            </li>
+            <li>
+            	<%= link_to material_path, :class => "" do %>
+            		<%= image_tag "abs_formula.png", :alt => "ABS Formula", :title => "ABS" %>
+            		<h2>ABS</h2>
+            	<% end %>
+            </li>
+        </ul>
+	</div>
+
+	<div class="customize_info">
+		<h2>Polylactic Acid (PLA)</h2>
+		<a class="red_button" href="#">Select</a>
+		<p>PLA is a biodegradable plastic made from renewable resources like corn starch and sugar cane.  It is known for its ease of use, pleasant smell, and tensile strength.</p>
+		<h3 class="attribute_header"><span>Resin</span></h3>
+			<ul class="attribute">
+				<li>
+		        	<%= image_tag "pla_natureworks.png", :alt => "Natureworks 4043D", :title => "Natureworks 4043D" %>
+		        	<h4>Natureworks 4043D</h4>
+	        	</li>
+	        </ul>
+		<h3 class="attribute_header"><span>Material Properties</span></h3>
+			<ul class="attribute">
+				<li>
+				    <%= image_tag "pla_hard.png", :alt => "Hard", :title => "Hard" %>
+		        	<h4>Hard</h4>
+	        	</li>
+	        	<li>
+				    <%= image_tag "pla_brittle.png", :alt => "Brittle", :title => "Brittle" %>
+		        	<h4>Brittle</h4>
+	        	</li>
+	        	<li>
+				    <%= image_tag "pla_glossy.png", :alt => "Glossy", :title => "Glossy" %>
+		        	<h4>Glossy</h4>
+	        	</li>
+	        	<li>
+				    <%= image_tag "pla_smell.png", :alt => "Smell", :title => "Smell" %>
+		        	<h4>Sweet Smell</h4>
+	        	</li>
+	        	<li>
+				    <%= image_tag "pla_renewable.png", :alt => "Renewable", :title => "Renewable" %>
+		        	<h4>Renewable</h4>
+	        	</li>
+	        </ul>
+	    <h3 class="attribute_header"><span>Temperatures</span></h3>
+	        <ul class="attribute">
+	        	<li>
+				    <%= image_tag "pla_temp.png", :alt => "Extrusion Temp", :title => "Extrusion Temp" %>
+		        	<h4>Extrusion Temp</h4>
+	        	</li>
+	        	<li>
+				    <%= image_tag "pla_fan.png", :alt => "Fan Cooling Helps", :title => "Fan Cooling Helps" %>
+		        	<h4>Fan Cooling Helps</h4>
+	        	</li>
+	        </ul>
+	    <h3 class="attribute_header"><span>Prints Well On</span></h3>
+	        <ul class="attribute">
+	        	<li>
+				    <%= image_tag "pla_tape.png", :alt => "Painter's Tape", :title => "Painter's Tape" %>
+		        	<h4>Painter's Tape</h4>
+	        	</li>
+		        <li>
+				    <%= image_tag "pla_glass.png", :alt => "Glass", :title => "Glass" %>
+		        	<h4>Glass</h4>
+		        </li>
+	        	<li>
+				    <%= image_tag "pla_kapton.png", :alt => "Kapton", :title => "Kapton" %>
+		        	<h4>Kapton</h4>
+	        	</li>
+	        </ul>
+        </div>
+
+	</div>
+</section>
