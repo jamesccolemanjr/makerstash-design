@@ -1,4 +1,4 @@
-MakerStash Design Readme
+== MakerStash Design Readme
 
 These are the initial design files for the makerstash storefront.
 
