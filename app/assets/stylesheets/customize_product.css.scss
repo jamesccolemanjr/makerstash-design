@@ -105,8 +105,6 @@ body {
 
 .social_sprite {
 	margin-top: 30px;
-	padding-left: 12px;
-	border-left: solid 8px $makerblue;
 
 	li {
 		display: inline-block;
@@ -130,7 +128,7 @@ body {
     font-size: 35px;  
     font-family: 'BebasNeueRegular', Arial, sans-serif;   
     position: relative;
-    z-index: 2;  
+    z-index: 5;  
 
 	ul {
 	    padding: 0;  
@@ -208,10 +206,10 @@ body {
 
 			&:hover, &:active {
 				background: $makerblue;
-				-webkit-transition: all $transition_time*2 ease-in-out;
-				-moz-transition: all $transition_time*2 ease-in-out;
-				-o-transition: all $transition_time*2 ease-in-out;
-				transition: all $transition_time*2 ease-in-out;
+				-webkit-transition: all $transition_time ease-in-out;
+				-moz-transition: all $transition_time ease-in-out;
+				-o-transition: all $transition_time ease-in-out;
+				transition: all $transition_time ease-in-out;
 
 			}
 
@@ -350,10 +348,10 @@ body {
 
     			&:hover, &:active {
     				background: $makerblue;
-    				-webkit-transition: all $transition_time*2 ease-in-out;
-					-moz-transition: all $transition_time*2 ease-in-out;
-					-o-transition: all $transition_time*2 ease-in-out;
-					transition: all $transition_time*2 ease-in-out;
+    				-webkit-transition: all $transition_time ease-in-out;
+					-moz-transition: all $transition_time ease-in-out;
+					-o-transition: all $transition_time ease-in-out;
+					transition: all $transition_time ease-in-out;
     			}
 
 
@@ -379,6 +377,73 @@ body {
 	}
 
 }
+
+.customize_nav_color {
+	width: 257px;
+	float: left;
+	padding-left: 25px;
+
+	ul {
+		padding: 0px;
+		margin: 0px;
+
+
+		li {
+			display: block;
+			margin-right: 24px;
+			float: left;
+
+
+			&:first-child {
+			margin-top: 0px;
+
+			}
+
+			a {
+				color: #000;
+				text-decoration: none;
+				display: block;
+				width: 100px;
+				height: 100px;
+				text-align: center;
+
+				img { 
+					border: 3px solid #eee;;
+					-webkit-border-radius: 15px; 
+  					-moz-border-radius: 15px; 
+  					border-radius: 15px;
+
+  					&:hover, &:active {
+    					border: 3px solid $makerblue;
+
+    					-webkit-transition: all $transition_time ease-in-out;
+						-moz-transition: all $transition_time ease-in-out;
+						-o-transition: all $transition_time ease-in-out;
+						transition: all $transition_time ease-in-out;
+
+    				}
+
+				}
+
+
+				h2 {
+					margin: 5px;
+					font-size: 12px;
+					text-align: center;
+					width: 95px;
+					font-weight: normal;
+					float: left;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
 
 
 /* Customize Body - Contains Info For Selected Attribute */
@@ -417,9 +482,9 @@ body {
 }
 
 .customize_info_color_qty {
-	margin-left: 240px;
+	margin-left: 282px;
 	border-left: 1px dotted;
-	padding-left: 37px;
+	padding: 0px 25px;
 
 
 	h2 {
